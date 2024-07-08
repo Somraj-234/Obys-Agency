@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plain Light';
+    color: white;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 10vw;
+}
+
+.line {
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 3vw;
+    font-family: "Silk Serif";
+    font-weight: 100;
+}
+
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
+}
+
+.line h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+.line h2{
+    /* background-color: red; */
+    height: 8vw;
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 1000;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+    }
+    100%{
+        font-family: "silk serif";
+    }
+}
+
+#main{
+position: relative;
+background-color: #030303;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
