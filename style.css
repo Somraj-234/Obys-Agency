@@ -12,6 +12,10 @@ html,body{
     width: 100%;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #crsr{
     width: 2.5vw;
     height: 2.5vw;
@@ -87,7 +91,7 @@ html,body{
 
 #main{
 position: relative;
-background-color: #030303;
+background-color: #151515;
 }
 
 #page1{
@@ -139,7 +143,7 @@ background-color: #030303;
     font-weight: 500;
 }
 
-.hero h2, .hero h3{
+.hero h2{
     
     font-size: 7.5vw; 
     text-transform: uppercase;
@@ -150,4 +154,135 @@ background-color: #030303;
 .hero h2:hover{
     -webkit-text-stroke: 1px #ffff;
     color: transparent;
+} 
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding-top: 25vh;
+    position: relative;
 }
+
+#video-container{
+    height: 70vh;
+    width: 71vw;
+    left: 28.2%;
+    position: relative;
+}
+
+#video-container img{
+    position: absolute;
+    object-fit: cover;   
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} 
+
+#video-cursor{ 
+    background-color: #FFA63D;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    position:absolute;
+    top: 10%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#video-cursor i{
+    /* height: 5vw;
+    width: 5vw; */
+    font-size: 2vw;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 5vh;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 7vh 0;
+}
+
+#page4-content{
+    width: 72vw;
+    margin-left: 28%;
+    position:relative;
+}
+#page4-content h1{
+    font-size:7vw;
+    text-transform: uppercase; 
+}
+
+#page4-content .underline{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin: 5vw 0;
+}
+
+#page4-content>p{
+    font-size:2.05vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+
+#page4-flex{
+    display: flex;
+}
+
+#page4-flex img{
+    width: 48%;
+}
+
+#page4-flex p{
+    font-size: 1vw;
+    width: 19%;
+    margin-left: 1vw;
+}
+
+#page4-blue-div{
+    background-color: #3F7DF4;
+    width: 44%;
+    padding: 3vw;
+    position: relative;
+    margin-top: -35vh;
+    margin-left: 45vh;
+}
+
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom:1.4px solid white;
+    padding: 2.4vw 0;
+}
+ 
+.blue-div-elem h4{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.blue-div-elem p {
+    width: 40%;
+    font-size: 1vw;
+}
+
+#page5{
+    min-width: 100vh;
+    width: 100%;
+ } 
