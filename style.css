@@ -12,6 +12,17 @@ html,body{
     width: 100%;
 }
 
+#crsr{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    border: 1px solid #ffffff8f;
+    position: fixed;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
 #loader{
     width: 100%;
     height: 100%;
@@ -83,4 +94,60 @@ background-color: #030303;
     width: 100%;
     height: 100vh;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;  
+}
+
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.hero{
+    /* background-color: red; */
+    width: 70%;
+    margin-left: 28%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.hero:nth-child(2){
+    margin-top: 19vh;
+}
+
+.hero h1{
+    
+    font-size: 7.5vw; 
+    text-transform: uppercase;
+    line-height: 7.5vw;
+    font-weight: 500;
+}
+
+.hero h2, .hero h3{
+    
+    font-size: 7.5vw; 
+    text-transform: uppercase;
+    line-height: 7.5vw;
+    font-weight: 500;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #ffff;
+    color: transparent;
 }
