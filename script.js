@@ -235,28 +235,6 @@ document.querySelector("#hero3").addEventListener("mouseleave",function(){
 // });
 
 
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const container = document.querySelector(".text-container");
-//     const fillText = document.querySelector("#footer-fill");
-//     const strokeText = document.querySelector("#footer-stroke");
-
-//     container.addEventListener("mouseenter", function() {
-//         gsap.to(fillText, { opacity: 0, duration: 0.5 });
-//         gsap.to(strokeText, { opacity: 1, duration: 0.5 });
-//     });
-
-//     container.addEventListener("mouseleave", function() {
-//         gsap.to(fillText, { opacity: 1, duration: 0.5 });
-//         gsap.to(strokeText, { opacity: 0, duration: 0.5 });
-//     });
-// });
-
-
-
-// $('#footer-stroke').textillate({ in: { effect: 'rollIn' } });
-
-
 function footerAnimation() {
 
     var clutter = ""
