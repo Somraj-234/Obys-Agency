@@ -70,8 +70,8 @@ tl.from("#line1-part1, .line h2", {
 //hide loader
 tl.to("#loader",{
     opacity:0,
-    duration:0.2, //0.2
-    delay:4 //4
+    duration:0, //0.2
+    delay:0 //4
 });
 tl.from("#page1",{
     delay:0.2,
@@ -111,13 +111,17 @@ function cursorAnimation(){
 Shery.mouseFollower({
     //Parameters are optional.
     // skew: true,
-    // ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    // duration: 1,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
   });
 
-  Shery.makeMagnet("#nav-part2 h4",{});
 
- var video = document.querySelector("#video-container video");
+Shery.makeMagnet("#nav-part2 h4",{});
+
+
+  //video play button animation
+
+var video = document.querySelector("#video-container video");
 
 var videoContainer = document.querySelector("#video-container")
 videoContainer.addEventListener("mouseenter",function(){
@@ -141,6 +145,8 @@ videoContainer.addEventListener("mouseleave",function(){
     })
 })
 
+
+//play pause button animation
 
 var flag = 0
 
@@ -166,16 +172,133 @@ var flag = 0
  })
 }
 
+
+//gooey effect
 function sheryAnimation(){
     Shery.imageEffect(".image-div",{
         style: 5,
         // debug: true,
-        config:{"a":{"value":2,"range":[0,30]},"b":{"value":0.25,"range":[-1,1]},"zindex":{"value":-9996999,"range":[-9999999,9999999]},"aspect":{"value":0.7241195864976497},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1.09,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":true},"onMouse":{"value":1},"noise_speed":{"value":0.2,"range":[0,10]},"metaball":{"value":0.56,"range":[0,2]},"discard_threshold":{"value":0.5,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10.69,"range":[0,100]}},
+        config:{"a":{"value":1.6,"range":[0,30]},"b":{"value":0.6,"range":[-1,1]},"zindex":{"value":"--9996999","range":[-9999999,9999999]},"aspect":{"value":0.7333170413977421},"ignoreShapeAspect":{"value":true},"shapePosition":{"value":{"x":0,"y":0}},"shapeScale":{"value":{"x":0.5,"y":0.5}},"shapeEdgeSoftness":{"value":0,"range":[0,0.5]},"shapeRadius":{"value":0,"range":[0,2]},"currentScroll":{"value":0},"scrollLerp":{"value":0.07},"gooey":{"value":true},"infiniteGooey":{"value":false},"growSize":{"value":4,"range":[1,15]},"durationOut":{"value":1,"range":[0.1,5]},"durationIn":{"value":1.5,"range":[0.1,5]},"displaceAmount":{"value":0.5},"masker":{"value":true},"maskVal":{"value":1,"range":[1,5]},"scrollType":{"value":0},"geoVertex":{"range":[1,64],"value":1},"noEffectGooey":{"value":false},"onMouse":{"value":1},"noise_speed":{"value":0.23,"range":[0,10]},"metaball":{"value":0.7,"range":[0,2]},"discard_threshold":{"value":0.62,"range":[0,1]},"antialias_threshold":{"value":0,"range":[0,0.1]},"noise_height":{"value":0.5,"range":[0,2]},"noise_scale":{"value":10,"range":[0,100]}},
         gooey: true,
     });
 }
+
+
+
+//flag animation
+document.addEventListener("mousemove",function(dets){
+    gsap.to("#flag",{
+        x:dets.x,
+        y:dets.y
+    })
+})
+
+document.querySelector("#hero3").addEventListener("mouseenter",function(){
+    gsap.to("#flag",{
+        opacity:1
+    })
+})
+
+document.querySelector("#hero3").addEventListener("mouseleave",function(){
+    gsap.to("#flag",{
+        opacity:0
+        
+    })
+})
+
+
+// $(document).ready(function() {
+//     // Initialize Textillate
+//     $('#footer-fill, #footer-stroke').textillate({
+//         in: { effect: 'fadeIn' },
+//         out: { effect: 'fadeOut' },
+//         loop: false
+//     });
+
+//     const container = document.querySelector(".text-container");
+//     const fillText = document.querySelector("#footer-fill");
+//     const strokeText = document.querySelector("#footer-stroke");
+
+//     container.addEventListener("mouseenter", function() {
+//         gsap.to(fillText, { opacity: 0, duration: 0.5 });
+//         gsap.to(strokeText, { opacity: 1, duration: 0.5 });
+//         $('#footer-fill').textillate('out');
+//         $('#footer-stroke').textillate('in');
+//     });
+
+//     container.addEventListener("mouseleave", function() {
+//         gsap.to(fillText, { opacity: 1, duration: 0.5 });
+//         gsap.to(strokeText, { opacity: 0, duration: 0.5 });
+//         $('#footer-fill').textillate('in');
+//         $('#footer-stroke').textillate('out');
+//     });
+// });
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const container = document.querySelector(".text-container");
+//     const fillText = document.querySelector("#footer-fill");
+//     const strokeText = document.querySelector("#footer-stroke");
+
+//     container.addEventListener("mouseenter", function() {
+//         gsap.to(fillText, { opacity: 0, duration: 0.5 });
+//         gsap.to(strokeText, { opacity: 1, duration: 0.5 });
+//     });
+
+//     container.addEventListener("mouseleave", function() {
+//         gsap.to(fillText, { opacity: 1, duration: 0.5 });
+//         gsap.to(strokeText, { opacity: 0, duration: 0.5 });
+//     });
+// });
+
+
+
+// $('#footer-stroke').textillate({ in: { effect: 'rollIn' } });
+
+
+function footerAnimation() {
+
+    var clutter = ""
+    var clutter2 = ""
+    document.querySelector("#footer h1").textContent.split("").forEach(function (elem) {
+      clutter += `<span>${elem}</span>`
+    })
+    document.querySelector("#footer h1").innerHTML = clutter
+    document.querySelector("#footer h2").textContent.split("").forEach(function (elem) {
+      clutter2 += `<span>${elem}</span>`
+    })
+    document.querySelector("#footer h2").innerHTML = clutter2
+  
+  
+    document.querySelector("#footer-text").addEventListener("mouseenter", function () {
+      gsap.to("#footer h1 span", {
+        opacity: 0,
+        stagger: 0.05
+      })
+      gsap.to("#footer h2 span", {
+        delay: 0.35,
+        opacity: 1,
+        stagger: 0.1
+      })
+    })
+    document.querySelector("#footer-text").addEventListener("mouseleave", function () {
+      gsap.to("#footer h1 span", {
+        opacity: 1,
+        stagger: 0.1,
+        delay: 0.35,
+  
+      })
+      gsap.to("#footer h2 span", {
+        opacity: 0,
+        stagger: 0.05
+      })
+    })
+  }
+
 
 loadingAnimation();
 cursorAnimation();
 locomotiveAnimation();
 sheryAnimation(); 
+footerAnimation()

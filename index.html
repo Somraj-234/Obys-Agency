@@ -6,14 +6,15 @@
     <title>Obys Agency</title>
           <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- animate css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="crsr"></div>
-    <div class="mousefollower"></div>
+    <!-- <div id="crsr"></div> -->
+    <!-- <div class="mousefollower"></div> -->
     <div id="loader">
         <div class="line">
             <div id="line1-part1">
@@ -63,6 +64,7 @@
                 <div class="hero" id="hero4">
                     <h1>Experince</h1>
                 </div>
+                <img id="flag" src="./img/indian_flag.png" alt="">
         </div>
         <div id="page2" data-scroll data-scroll-speed="-1.4">
             <div id="video-container">
@@ -77,14 +79,32 @@
             <h1>Our Projects</h1>
             <div class="underline"></div>
             <div id="img-div-container">
-                <div class="image-div">
-                    <img src="./img/Olga_Prudka_1.jpeg" alt="">    
-                    <img src="./img/Olga_Prudka_2.jpeg" alt="">    
+                <div id="f1-container" class="img-text">
+                    <h2 id="head">Olga Prudka</h2>
+                    <div id="first-img" class="image-div">
+                        <img src="./img/Olga_Prudka_1.jpeg" alt="">    
+                        <img src="./img/Olga_Prudka_2.jpeg" alt="">    
+                    </div>
+                    <div class="txt">
+                        <h2>Logo design, Website design, Development </h2>
+                        <h2>2023</h2>
+                    </div>
+                    <div class="underline"></div>
                 </div>
-                <div class="image-div">
-                    <img src="./img/AIM-1.jpeg" alt="">    
-                    <img src="./img/AIM-2.jpeg" alt="">    
+
+                <div class="img-text">
+                    <h2 id="head">AIM</h2>
+                    <div class="image-div">
+                        <img src="./img/AIM-1.jpeg" alt="">    
+                        <img src="./img/AIM-2.jpeg" alt="">    
+                    </div>
+                    <div class="txt">
+                        <h2>Logo design, Website design, Development </h2>
+                        <h2>2024</h2>
+                    </div>
+                    <div class="underline"></div>
                 </div>
+
 
                 <div class="page3-circle">
                     <svg class="button__arrow" viewBox="0 0 91 118" fill="none">
@@ -104,14 +124,33 @@
                         </div>
                     </div> 
 
-                <div class="image-div">
-                    <img src="./img/OCHI.jpeg" alt="">    
-                    <img src="./img/OCHI_2-1.jpeg" alt="">    
-                </div>
-                <div class="image-div">
-                    <img src="./img/Laxer_1-2.jpeg" alt="">    
-                    <img src="./img/Laxer_2.jpeg" alt="">    
-                </div>
+                    <div id="f3-container" class="img-text">
+                        <h2 id="head">OCHI</h2>
+                        <div class="image-div">
+                            <img src="./img/OCHI.jpeg" alt="">    
+                            <img src="./img/OCHI_2-1.jpeg" alt="">    
+                        </div>
+                        <div class="txt">
+                            <h2>Website design, Development </h2>
+                            <h2>2022</h2>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div id="f4-container" class="img-text">
+                        <h2 id="head">David Laxer</h2>
+                        <div class="image-div">
+                            <img src="./img/Laxer_1-2.jpeg" alt="">    
+                            <img src="./img/Laxer_2.jpeg" alt="">    
+                        </div>
+                        <div class="txt">
+                            <h2>Website design, Development </h2>
+                            <h2>2022</h2>
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                
+                
             </div>
 
 
@@ -218,7 +257,10 @@
             </div>
         </div>
         <div id="footer" data-scroll data-scroll-speed="-1.4">
-            <h1>Let's Create</h1>
+            <div id="footer-text">
+                <h1>Let's Create</h1>
+                <h2>Let's Create</h1>
+            </div>
             <div class="underline"></div>
             <div id="footer-div">
                 <div class="box">
@@ -238,7 +280,7 @@
                 </div>
                 <div class="box">
                     <h6>Say Hi!</h6>
-                    <h5>info@obys.agency</h5>
+                    <h5 id="email">info@obys.agency</h5>
                 </div>
             </div>
             <div class="underline">
@@ -255,6 +297,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- lettering js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- textillate js  -->
+    <script src="
+    https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js
+    "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
