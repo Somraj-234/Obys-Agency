@@ -70,8 +70,8 @@ tl.from("#line1-part1, .line h2", {
 //hide loader
 tl.to("#loader",{
     opacity:0,
-    duration:0, //0.2
-    delay:0 //4
+    duration:0.2, //0.2
+    delay:4 //4
 });
 tl.from("#page1",{
     delay:0.2,
@@ -108,12 +108,12 @@ function cursorAnimation(){
 // // magnet effect
 //  Shery.makeMagnet("#nav-part2 h4",{});
 
-Shery.mouseFollower({
-    //Parameters are optional.
-    // skew: true,
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    duration: 1,
-  });
+// Shery.mouseFollower({
+//     //Parameters are optional.
+//     skew: true,
+//     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//     duration: 1,
+//   });
 
 
 Shery.makeMagnet("#nav-part2 h4",{});
