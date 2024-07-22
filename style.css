@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Plain Light';
-    src: url('./fonts/plain-regular-webfont.ttf') format('truetype'); /* Correct format for TTF */
+    src: url('./fonts/plain-regular-webfont.woff') format('truetype'); /* Correct format for TTF */
     font-weight: 400; /* 'normal' is equivalent to 400 */
     font-style: normal;
 }
