@@ -1,16 +1,7 @@
 @font-face {
     font-family: 'Plain Light';
-    src: url('./fonts/plain-light-webfont.woff') format('woff');
-    src: url('./fonts/plain-light-webfont.ttf') format('truetype');
-
-    font-family: 'Plain regular';
-    src: url('./fonts/plain-regular-webfont.woff') format('woff');
-    src: url('./fonts/plain-regular-webfont.ttf') format('truetype');
-
-    font-family: 'silk serif';
-    src: url('./fonts/silkserif-lightitalic-webfont.woff') format('woff');
-    src: url('./fonts/silkserif-lightitalic-webfont.ttf') format('truetype');
-
+    src: url('./fonts/plain-light-webfont.woff');
+    /* src: url('./fonts/plain-light-webfont.ttf') format('truetype'); */
     font-weight: normal;
     font-style: normal;
 }
