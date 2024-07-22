@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'Plain Light';
     src: url('./fonts/plain-light-webfont.woff') format('woff');
-    font-weight: 300; /* 'light' is not a valid value for font-weight */
-    font-style: normal;
+    /* font-weight: 300; 
+    font-style: normal; */
 }
 
 @font-face {
     font-family: 'Plain Light';
     src: url('./fonts/plain-regular-webfont.woff') format('truetype'); /* Correct format for TTF */
-    font-weight: 400; /* 'normal' is equivalent to 400 */
-    font-style: normal;
+    /* font-weight: 400; 
+    font-style: normal; */
 }
 
 @font-face {
     font-family: 'Silk Serif';
     src: url('./fonts/silkserif-lightitalic-webfont.woff') format('woff');
-    font-weight: 300; /* 'light' is not a valid value for font-weight */
-    font-style: italic; /* Assuming 'italic' is intended */
+    /* font-weight: 300; 
+    font-style: italic; */
 }
 
 @font-face {
     font-family: 'Silk Serif';
     src: url('./fonts/silkserif-regularitalic-webfont.woff') format('woff');
-    font-weight: 400; /* 'normal' is equivalent to 400 */
-    font-style: italic; /* Assuming 'italic' is intended */
+    /* font-weight: 400;
+    font-style: italic;  */
 }
 
 
